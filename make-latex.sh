@@ -25,6 +25,6 @@ echo " Converting to pdf... "
 
 pandoc -s latex/*.tex -o book.tex
 
-pandoc -N --quiet --variable "geometry=margin=1.2in" --variable mainfont="Open Sans Italic" --variable sansfont="Open Sans Italic" --variable monofont="Open Sans Italic" --variable fontsize=12pt --variable version=2.0 book.tex  --pdf-engine=xelatex --toc -o book.pdf
+pandoc -N --quiet --variable "geometry=margin=1.2in" --variable mainfont="OpenSans-Light" --variable sansfont="OpenSans-Light" --variable monofont="OpenSans-Light" --variable fontsize=12pt --variable version=2.0 book.tex  --pdf-engine=xelatex --toc -o book.pdf
 
 echo " Done converting to pdf. "
