@@ -5,7 +5,7 @@ function Image(img)
     f:close()
     local caption = pandoc.utils.stringify(doc.meta.caption) or "No Caption Found"
     local student = pandoc.utils.stringify(doc.meta.student) or "No Student Found"
-    local id = pandoc.utils.stringify(doc.meta.id) or "No ID Found"
+    local id = pandoc.utils.stringify(doc.meta.id) or "No AM Found"
     local comment = "> " .. caption .. " Ον/μο:" .. student .. " Aριθμός Μητρώου " .. AM
     return pandoc.RawInline('markdown',comment)
   end
